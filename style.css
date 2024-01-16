@@ -186,7 +186,26 @@ ul li a{
     display: flex;
     justify-content: right;
 }
+/* Destination section  */
+.destination-text{
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
 
+}
+.destination-text h1{
+    font-size: 50px;
+    font-weight: 800;
+}
+.destination-text p{
+    width: 660px;
+    text-align: center;
+    padding-top: 24px;
+}
 
 
 
@@ -270,6 +289,20 @@ ul li a{
         width: 100%;
         margin: 40 auto;
         /* padding: 30px; */
+    }
+    .destination-text{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .destination-text h1{
+        text-align: center;
+        font-size: 24px;
+    }
+    .destination-text p{
+        width: 80%;
+        text-align: center;
     }
 
 }
