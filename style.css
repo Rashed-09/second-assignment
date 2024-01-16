@@ -10,11 +10,15 @@
     --third-color:#fff;
     --paragraph:rgba(19, 19, 24, 0.50);
 }
+body{
+    
+}
 
 /* header section  */
 header{
-    width: 80%;
+    width: 1140px;
     margin: 50px auto;
+    
 }
 .nav{
     display: flex;
@@ -75,7 +79,7 @@ ul li a{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 500px;
+    /* height: 500px; */
     border-radius: 15px;
 }
 .banner-title{
@@ -151,17 +155,43 @@ ul li a{
 
 
 
-
-
-
-
-
-@media screen and(max-width: 600px) {
+@media screen and (max-width: 600px) {
     .nav{
-        width: 600px;
-        /* height: ; */
-        background-position: center;
-        background-size: cover;
+        width: 80%;
+        margin: 10px auto;
+
+    }
+    .name{
+        font-size: 44px;
+    }
+    .name p{
+       flex-wrap: wrap;
+       color: #FFF;
+    }
+    .blog{
+        display: none;
+    }
+    .banner{
+        display: grid;
+        flex-direction: column;
+        width: 80%;
+        height: 500px;
         
     }
+    .banner .banner-option{
+       display: flex;
+       flex-direction: column;
+       margin: 20px auto;
+    }
+    .banner-option .white{
+        width: 400px;
+    }
+    .banner-option .find-now{
+        width: 400px;
+    }
+    .banner .banner-title{
+       width: 100%;
+       font-size: 26px;
+    }
+
 }
