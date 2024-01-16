@@ -16,7 +16,7 @@ body{
 
 /* header section  */
 header{
-    width: 1140px;
+    width: 80%;
     margin: 50px auto;
     
 }
@@ -128,7 +128,7 @@ ul li a{
 .banner-option .find-now{
     width: 100px;
     height: 40px;
-    color: rgba(19, 19, 24, 0.50);
+    color: #fff;
     text-align: center;
     font-size: 12px;
     font-weight: 400;
@@ -137,14 +137,54 @@ ul li a{
     display: flex;
     align-items: center;
     justify-content: center;
+    
     border-radius: 5px;
+    background-color: #FF5400;
 
 }
 .red{
     border: none;
-    color: rgba(19, 19, 24, 0.50);
+    color: #fff;
     margin-left: 8px;
     background:none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* popular tour section  */
+.popular-tour{
+    width: 80%;
+    margin: 30px auto;
+    margin-top: 100px;
+    gap: 4%;
+    display: flex;
+
+}
+.tour-description{
+    width: 48%;
+    
+}
+.tour-description p, ul, button{
+    margin-top: 40px;
+    color: var(--paragraph);
+}
+.tour-description ul{
+    padding-left: 40px;
+    gap: 100px;
+}
+.tour-description button{
+    margin-left: 20px;
+    width: 80px;
+    background-color: var(--secondery-color);
+    color: #fff;
+    border: none;
+    height: 30px;
+    border-radius: 4px;
+}
+.tour-picture{
+    width: 48%;
+    display: flex;
+    justify-content: right;
 }
 
 
@@ -157,12 +197,16 @@ ul li a{
 
 @media screen and (max-width: 600px) {
     .nav{
-        width: 80%;
+        width: 100%;
         margin: 10px auto;
 
     }
     .name{
-        font-size: 44px;
+        width: 100%;
+    }
+    .name h1{
+        font-size: 14px;
+        font-weight: 300;
     }
     .name p{
        flex-wrap: wrap;
@@ -174,24 +218,59 @@ ul li a{
     .banner{
         display: grid;
         flex-direction: column;
-        width: 80%;
-        height: 500px;
+        width: 100%;
+        /* height: 500px; */
         
     }
     .banner .banner-option{
        display: flex;
        flex-direction: column;
        margin: 20px auto;
+       width: 80%;
     }
     .banner-option .white{
-        width: 400px;
+        width: 100%;
     }
     .banner-option .find-now{
-        width: 400px;
+        width: 100%;
     }
     .banner .banner-title{
-       width: 100%;
-       font-size: 26px;
+       width: 70%;
+       margin: 10px auto;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       padding-top: 20px;
+       
+    }
+    .banner-title h1{
+        font-size: 24px;
+    }
+    .banner-title p{
+        width: 70%;
+        color: var(--main-color);
+    }
+        /* this is responsive of tour section  */
+    .popular-tour{
+        display: flex;
+        /* grid-template-columns: repeat(1, 1fr); */
+        flex-direction: column;
+    }
+    .tour-description{
+        width: 100%;
+        margin: 10 auto;
+        /* padding-right: 30px; */
+    }
+    .tour-picture img{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .tour-picture{
+        width: 100%;
+        margin: 40 auto;
+        /* padding: 30px; */
     }
 
 }
+
