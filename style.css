@@ -244,6 +244,23 @@ ul li a{
  .dst-img7{
     grid-area: num7;
  }
+ /* Why choose us   */
+ .choose-text{
+    width: 80%;
+    margin: 30px auto;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+
+ }
+ .choose-text h1{
+    text-align: center;
+ }
+ .choose-text p{
+    text-align: center;
+    width: 700px;
+    margin: 20px auto;
+ }
 
 
 
@@ -353,6 +370,13 @@ ul li a{
          "num6"
          "num7"
         ;
+    }
+    /* Why choose us  */
+    .choose-text{
+        width: 80%;
+    }
+    .choose-text p{
+        width: 100%;
     }
 
 }
