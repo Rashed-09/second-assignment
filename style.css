@@ -322,7 +322,79 @@ ul li a{
     display: grid;
     grid-area: guarantee;
  }
+ /* News Section  */
+ .news-container{
+    width: 80%;
+    margin: 70px auto;
+    display: flex;
+    gap: 2%;
+ }
 
+ .newslatter{
+    width: 39%;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--secondery-color);
+    border-radius: 8px;
+    justify-content: center;
+ }
+ .newslatter h3{
+    font-size: 24px;
+    font-weight: 800;
+ }
+ .newslatter p{
+    color: #5a5a5d;
+    font-size: 14px;
+    margin-top: 10px;
+ }
+ .news-input{
+    padding: 30px 30px 30px 0;
+    
+ }
+ .news-input button{
+    display: block;
+    width: 100%;
+    height: 36px;
+    border: none;
+    background-color: var(--secondery-color);
+    color: #fff;
+    border-radius: 8px;
+ }
+ .news-input input{
+    display: block;
+    margin: 30px 0;
+    width: 100%;
+    height: 36px;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    border: none;
+    padding-left: 10px;
+ }
+
+
+ .news-pic{
+    width: 59%;
+    position: relative;
+ }
+ .saven-parcent{
+    background-color: var(--secondery-color);
+    width: 25%;
+    border-radius: 8px;
+    position: absolute;
+    padding: 10px;
+    right: 0;
+    bottom: 70px;
+    transform: rotate(-45deg);
+ }
+.saven-parcent h3{
+    color: #fff;
+    text-align: center;
+}
+.saven-parcent p{
+    color: #fff;
+    text-align: center;
+}
 
 
 
@@ -452,6 +524,18 @@ ul li a{
         margin-top: 15px;
     }
     .guarantee{
+        width: 100%;
+    }
+    .news-container{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+    }
+    .newslatter{
+        width: 100%;
+    }
+    .news-pic{
         width: 100%;
     }
 
